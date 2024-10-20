@@ -1,0 +1,263 @@
+/* ShambhalaComponent.css */
+.shambhala-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: #f0f0f0;
+}
+
+.shambhala-inner {
+    width: 1440px;
+    height: 600px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.second-heading {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.shambhala-content {
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.shambhala-inner {
+    max-width: 85%;
+    height: 500px; /* Reduce height for 1024px frame */
+  }
+
+  .box1 {
+    width: 200px;
+    left: 30px;
+    top: 90%;
+    transform: translateY(-50%);
+}
+
+.box2 {
+    width: 200px;
+    right: 140px;
+    top: 90px;
+}
+
+.box3 {
+    width: 200px;
+    right: 5px;
+    bottom: 10%;
+    top: 90%;
+}
+
+
+@media (min-width:1440px) {
+    .shambhala-inner {
+        max-width: 85%;
+        height: 500px; /* Reduce height for 1024px frame */
+      }
+    
+      .box1 {
+        width: 200px;
+        left: 30px;
+        top: 90%;
+        transform: translateY(-50%);
+    }
+    
+    .box2 {
+        width: 200px;
+        right: 140px;
+        top: 90px;
+    }
+    
+    .box3 {
+        width: 200px;
+        right: 5px;
+        bottom: 10%;
+        top: 90%;
+    }
+    
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+    .shambhala-inner {
+      max-width: 85%;
+      height: 400px; /* Reduce height for 1024px frame */
+      margin-bottom: 300px;
+    }
+
+    .shambhala-container {
+        height: 550px;
+    }
+  
+    .shambhala-content {
+      max-width: 70%;
+      margin-bottom: 200px;
+    }
+  
+    .shambhala-content h4 {
+      margin-top: 50px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  
+    .shambhala-content h1 {
+      font-size: 32px;
+    }
+  
+    .shambhala-content p {
+      font-size: 14px;
+    }
+
+    /* Adjusting position and size for each box */
+    .box1 {
+        width: 150px;
+        left: -30px;
+        top: 110%;
+        transform: translateY(-50%);
+    }
+  
+    .box2 {
+        width: 150px;
+        right: 80px;
+        top: 90px;
+    }
+  
+    .box3 {
+        width: 150px;
+        right: -50px;
+        bottom: 15%;
+        top: 450px;
+    }
+}
+  
+@media (max-width: 768px) {
+    .shambhala-inner {
+      max-width: 80%;
+      height: 200px;
+      margin-bottom: 400px;
+    }
+
+    .shambhala-container {
+        height: 450px;
+    }
+    
+    .shambhala-content h4 {
+      margin-top: 30px;
+      font-size: 12px;
+    }
+
+    .shambhala-content h1 {
+      font-size: 20px;
+    }
+  
+    .shambhala-content p {
+      font-size: 11px;
+      margin-bottom: 200px;
+    }
+  
+    .box1, .box2, .box3 {
+      width: 100px; /* Smaller size for mobile */
+    }
+
+    .box1 {
+        width: 140px;
+        left: -60px;
+        top: 200%;
+        transform: translateY(-50%);
+    }
+  
+    .box2 {
+        width: 140px;
+        right: 20px;
+        top: 120px;
+    }
+  
+    .box3 {
+        width: 140px;
+        right: -60px;
+        bottom: 15%;
+        top: 380px;
+    }
+
+    @media (max-width: 479px) {
+        .shambhala-container {
+            width: 100%;
+            overflow: hidden; /* Prevent both horizontal and vertical overflow */
+            padding: 10px 0;
+            margin: 0 auto;
+            height: auto; /* Set to auto to avoid forcing a fixed height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        .shambhala-inner {
+            max-width: 90%;
+            height: auto; /* Set to auto to adapt to content */
+            margin-top: 50px;
+            margin-bottom: 50px; /* Adjust bottom margin as needed */
+        }
+    
+        .shambhala-content {
+            max-width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 10px;
+            margin-bottom: 100px; /* Adjust as needed to avoid extra space */
+        }
+    
+        .shambhala-content h4 {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    
+        .shambhala-content h1 {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+    
+        .shambhala-content p {
+            font-size: 12px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    
+        /* Adjust box sizes and positions to fit content */
+        .box1 {
+            width: 120px;
+            left: -40px;
+            top: 15%; /* Adjust position to avoid overflow */
+            transform: translateY(-50%);
+            position: absolute;
+        }
+    
+        .box2 {
+            width: 120px;
+            right: -40px;
+            top: -30px; /* Adjust position to avoid overflow */
+            position: absolute;
+        }
+    
+        .box3 {
+            width: 120px;
+            right: -40px;
+            top: 95%; /* Adjust position to avoid overflow */
+            transform: translateY(-50%);
+            position: absolute;
+        }
+    }
+    
+    
+    
+    
+    
+}
+
