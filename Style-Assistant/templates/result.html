@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Results</title>
+  <style>
+    body {
+      background-color: #F2F2F2;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e80c0c; /* Dark green */
+    }
+
+    main {
+      padding: 3em;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    #recommendation {
+      margin: 20px auto;
+      width: 50%;
+      background-color: #FFFFFF;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+      background-color: #F0F0F0;
+      padding: 10px;
+      border-radius: 5px;
+      overflow: auto;
+      max-height: 400px;
+    }
+
+    /* Style for matching images section */
+    section#matching_images {
+      margin-top: 30px;
+    }
+
+    #matching_images h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    /* Card container styling */
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 200px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Fashion Recommendation Result</h1>
+  </header>
+  <main>
+    <div id="recommendation">
+      <h2>Recommendations for You:</h2>
+      <pre>{{ recommendations }}</pre>
+    </div>
+    
+    <!-- Matching Images Section -->
+    <section id="matching_images">
+      <h2>Suggestions:</h2>
+      <div class="image-grid">
+        {% for item in matching_images %}
+        <div class="card">
+          <img src="{{ item.imageurl }}" alt="{{ item.title }}">
+          <h3>{{ item.title }}</h3>
+          <p>Price: {{ item.price }}</p>
+          <p>Rating: {{ item.rating }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    
+
+  </main>
+</body>
+
+</html>
+
