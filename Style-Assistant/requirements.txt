@@ -1,0 +1,5 @@
+
+typing-extensions==4.5.0
+langchain==0.2.6  # replace with the actual required version
+langchain-google-genai==1.0.7  # replace with the actual required version
+langchain-community==0.2.6  # replace with the actual required version

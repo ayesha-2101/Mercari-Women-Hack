@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Fashion Assistant</title>
+  <style>
+    body {
+      background-color: #F2F2F2;
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e80c0c; /* Dark green */
+    }
+
+    main {
+      padding: 3em;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    form {
+      margin: 0 auto 20px auto;
+      width: 50%;
+      background-color: #FFFFFF;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: transparent;
+      border: solid 2px #e80c0c;
+      border-radius: 5px;
+      color: black;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      height: 2.5em;
+      cursor: pointer;
+      width: 100%;
+    }
+    input[type="submit"]:hover{
+      background-color: #e80c0c;
+      color: white;
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 40px;
+      padding: 0, 130px, 0, 130px;
+      img{
+        padding-left: 130px;
+        height: 30px;
+      }
+
+      a{
+        color: black;
+        text-decoration: none;
+        font-weight: 700;
+        margin-left: 5px;
+      }
+
+      a:last-child{
+        padding-right: 130px;
+      }
+
+      a:hover {
+        color: #e80c0c;
+      }
+    }
+
+    header{
+      text-align: center;
+      color: black;
+      h3{
+        font-weight: 500px;
+        margin-bottom: 5px;
+      }
+      red1{
+        color: #e80c0c
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Mercari_logo.svg" alt="">
+    <div class="menu">
+      <a href="">Home</a>
+      <a href="">My Circles</a>
+      <a href="">Style Assistant</a>
+    </div>
+  </nav>
+  <header>
+    <h3 className="text-xl font-bold text-center text-black mb-2">
+      Style Assistant
+    </h3>
+    <h1>
+<span class="red1">Style</span>
+<span> Your Confidence</span>
+</h1>
+  </header>
+  <main>
+    <form method="post" enctype="multipart/form-data">
+      <label for="skin_color">Skin Color:</label>
+      <input type="text" name="skin_color" id="skin_color" placeholder="Enter skin color" required>
+
+      <label for="body_type">Body Type:</label>
+      <input type="text" name="body_type" id="body_type" placeholder="Enter body type" required>
+
+      <label for="occasion">Occasion:</label>
+      <input type="text" name="occasion" id="occasion" placeholder="Enter occasion" required>
+
+      <label for="preferred_style">Preferred Style:</label>
+      <input type="text" name="preferred_style" id="preferred_style" placeholder="Enter preferred style" required>
+
+      <input type="submit" value="Get Recommendations">
+    </form>
+  </main>
+</body>
+
+</html>

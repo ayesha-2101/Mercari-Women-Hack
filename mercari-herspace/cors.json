@@ -1,0 +1,9 @@
+[
+    {
+      "origin": ["https://shambhala2.netlify.app/"],
+      "method": ["GET", "POST", "PUT"],
+      "maxAgeSeconds": 3600,
+      "responseHeader": ["Content-Type"]
+    }
+  ]
+  // "http://localhost:5173",
