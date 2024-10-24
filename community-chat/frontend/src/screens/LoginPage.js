@@ -20,7 +20,7 @@ export default function LoginPage() {
           d="flex"
           justifyContent='center'
           p={4}
-          bg={"#176B87"}
+          bg={"#a29ea0"}
           w='100%'
           m='13px 0px 10px 0px'
           borderRadius='lg'
@@ -32,7 +32,7 @@ export default function LoginPage() {
           d="flex"
           justifyContent='center'
           p={3}
-          bg={"#176B87"}
+          bg={"#a29ea0"}
           w='100%'
           m='40px 0px 15px 0px'
           borderRadius='lg'

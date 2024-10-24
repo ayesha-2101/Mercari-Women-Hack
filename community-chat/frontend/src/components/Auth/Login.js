@@ -81,18 +81,6 @@ export default function Login() {
         >
           LogIn
         </Button>
-        <Button
-          colorScheme="red"
-          width="100%"
-          mt={15}
-          size="md"
-          onClick={() => {
-            setEmail("guest123@mail.com");
-            setPassword("1234");
-          }}
-        >
-          Guest User
-        </Button>
       </FormControl>
     </VStack>
   );
